@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kolp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>kolp</h1>
+        <input type="text" id="searchInput" placeholder="search here and press enter... use prefixes for best results" required>
+        <p id="error" class="error"></p>
+        <button class="prefixes" onclick="toggleQueries()">Prefixes</button>
+        <div id="queryInfo" style="display:none;">
+            <p class="bold-text">Available Queries:</p>
+            <ul>
+                <li><strong>define:</strong> gives you dictionary definition of a term/word.</li>
+                <li><strong>question:</strong> gives you specific, clear and concise answer of any question.</li>
+                <li><strong>pdf:</strong> gives you direct pdf file links to download for any book title or author name.</li>
+                <li><strong>weather:</strong> gives you current weather update of any place.</li>
+                <li><strong>time:</strong> gives you current time of any place.</li>
+            </ul>
+            <p><span class="bold-text">Instructions: </span> For best results, use prefixes with a colon. Example: "define: hello" will give you the definition of "hello".</p>
+        </div>
+        <div id="results"></div>
+        <button id="backButton" style="display: none;">Back</button>
+    </div>
+   
+    <script src="app.js"></script>
+</body>
+</html>

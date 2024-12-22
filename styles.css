@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns content to the left */
+    justify-content: flex-start; /* Aligns content to the top vertically */
+    height: 100vh;
+    width: 350px;
+    margin: 0 auto; /* Centers the container horizontally */
+}
+#searchInput {
+    width: 350px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.prefixes {
+    margin-top: 10px; /* Adds space below the search input */
+    border: none; /* Removes borders */
+    background: none; /* Removes background */
+    color: blue; /* Sets text color to blue */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+
+#error {
+    color: red;
+    display: none;
+}
