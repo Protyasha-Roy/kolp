@@ -30,3 +30,14 @@
     color: red;
     display: none;
 }
+
+#searchButton {
+    margin-top: 10px;   
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}

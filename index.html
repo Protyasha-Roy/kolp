@@ -9,9 +9,12 @@
 <body>
     <div class="container">
         <h1>kolp</h1>
-        <input type="text" id="searchInput" placeholder="search here and press enter... use prefixes for best results" required>
-        <p id="error" class="error"></p>
-        <button class="prefixes" onclick="toggleQueries()">Prefixes</button>
+        <input type="text" id="searchInput" placeholder="press enter or click search... use prefixes for best results" required>
+        <div class="button-container">
+            <button class="prefixes" onclick="toggleQueries()">Prefixes</button>
+            <button id="searchButton">Search</button>
+        </div>
+        <p id="error" class="error"></p> 
         <div id="queryInfo" style="display:none;">
             <p class="bold-text">Available Queries:</p>
             <ul>

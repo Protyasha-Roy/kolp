@@ -9,6 +9,7 @@ const backButton = document.getElementById('backButton'); // Assuming there's a 
 let queryHistory = []; let currentQueryIndex = -1;
 
 const searchInput = document.getElementById('searchInput');
+const searchButton = document.getElementById('searchButton');
 const defineFormat = {
     searchedText: "hello",
     definition: "Hello' an [expression] or [gesture] of greeting —used [interjectionally] in greeting, in answering the [telephone], or to express [surprise]. examples: hello there, waved hello.",
@@ -60,7 +61,17 @@ const generalFormat = {
 searchInput.addEventListener('keydown', async (event) => {
     if (event.key === 'Enter') {
         const inputValue = event.target.value;
-        handleSearch(inputValue);  // Call handleSearch on pressing Enter
+        if(inputValue.trim() !== ''){
+            handleSearch(inputValue);  // Call handleSearch on pressing Enter
+        }
+    }
+});
+
+// Event listener for clicking the search button
+searchButton.addEventListener('click', () => {
+    const inputValue = searchInput.value;
+    if(inputValue.trim() !== ''){
+        handleSearch(inputValue);  // Call handleSearch on clicking the search button
     }
 });
 
