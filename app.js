@@ -413,8 +413,8 @@ backButton.addEventListener('click', () => { if (currentQueryIndex > 0) {
 
 // The recursive click handler
 function handleWordClick(word) {
-    document.getElementById('searchInput').value=`define: ${word}`;
+    document.getElementById('searchInput').value=`${word}`;
 
     // Trigger the search again after updating the input field
-    handleSearch(`define: ${word}`);
+    handleSearch(`${word}`);
 }
